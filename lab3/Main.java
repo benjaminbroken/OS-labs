@@ -51,7 +51,6 @@ public class Main {
 			// first modal window
 			showModalWindow();
 
-			// по нажатию первой кнопки
 			ProcessBuilder executable = new ProcessBuilder("java", "-cp",
 					"bin", "Executable");
 			ex = executable.start();
@@ -82,27 +81,6 @@ public class Main {
 					break;
 			}
 
-			// // при закрытии приложения
-			// exInput.close();
-			// ex.destroy();
-			// // + модальное окно с выводом:
-			// Checker.isRunning(Executable.process, Executable.command);
-
-			// вариант по нажатию второй кнопки
-			/*
-			 * ProcessBuilder windowed = new ProcessBuilder("java", "-cp",
-			 * "out/production/monitor", "Windowed"); win = executable.start();
-			 * 
-			 * BufferedReader winInput = new BufferedReader(new
-			 * InputStreamReader(win.getInputStream()));
-			 * 
-			 * String s = null; while ((s = winInput.readLine()) != null) {
-			 * //вывод в Memo! System.out.println(s); }
-			 * 
-			 * //при закрытии приложения winInput.close(); win.destroy(); //+
-			 * модальное окно c выводом: Checker.isRunning(Windowed.process,
-			 * Windowed.command);
-			 */
 
 		} catch (Exception e) {
 			System.out.print(e.getMessage());
